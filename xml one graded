@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 2017-08-30 ajn
+    This is an XML comment, and it's how we'll be adding comments to your code! Try writing one yourself. You can write these
+    to document your decisions, ask us questions, etc. We like to identify ourselves with initials to help keep clear *who* is talking.
+     (ajn is Aaron Newton, JMH is Jon Horanic, and ebb is Dr. B)
+   To read our comments and see everything, you'll probably want to toggle the "line wrap" feature in oXygen.
+   Do this by going to Document, Edit, and select Toggle Line Wrap on the little submenu. 
+   Or on your keyboard, you can hold down Ctrl (or Command on a Mac) + Shift + Y. -->
+
+<Recipe_Name>Gazpacho Recipe
+
+ <description>California version of the classic Spanish gazpacho!
+     Chilled soup made with ripe fresh tomatoes, cucumber, bell pepper, celery, and onions.
+ </description>
+    <Prep_time> 25 minutes</Prep_time>
+    <Yield> Serves 8</Yield> 
+<Ingredients>
+    <ing_1 units="6 cups">6 ripe tomatoes (about 3 lbs), peeled and chopped (yielding about 6 cups)</ing_1>
+    <!--2017-08-30 ajn Another way of writing xml in forms of steps in as following:
+    <ing n="1" units="6 cups">6 ripe tomatoes (about 3 lbs), peeled and chopped (yielding about 6 cups)</ing>    
+    Notice the 'n="1"'. This refers to your first step and then for your next step you could write 'n="2"'. This is good to do becasue later in the course we will teach you how to make the computer count for you.-->
+    <ing_2 units="1 1/4 cups">1 red onion, finely chopped (about 1 1/4 cups)</ing_2>
+    <ing_3 units="1 cup">1 cucumber, peeled, seeded, chopped (about 1 cup)</ing_3>
+    <ing_4 units="1 cup">1 sweet red bell pepper (or green) seeded and chopped (about 1 cup)</ing_4>  
+    <ing_5 units="1 cup">2 stalks celery, chopped (about 1 cup)</ing_5>
+    <!-- 2017-08-30 JMH ebb: We noticed that after this point, you changed what you included in the @units attribute. 
+        Be careful: when creating any element or attribute keep in mind that *consistency is key!*
+    A change like this can lead to readablity issues for both humans and computer. 
+    We agree, actually, with your later decision to code units as the unit of measure (cups, Tbsb), and even here we would recommend ALWAYS using the same form of the word: "cup" vs. "cups". But we'd write a separate attribute to hold the number as a special piece of information, the quantity, like so: <ing units="cup" quant="1">...</ing> Make sense? 
+    Later on when we get to schema coding (next week!), we'll show you how you can control what values you consider "valid" for your XML projects. 
+    -->
+    <ing_6 units="Tbsp"> 1-2 Tbsp chopped fresh parsley</ing_6>
+    <ing_7 units="Tbsp">2 Tbsp chopped fresh chives</ing_7>
+    <ing_8>1 clove garlic, minced (about 1 teaspoon)</ing_8>
+    <ing_9 units="cups">1/4 cup red wine vinegar</ing_9>
+    <ing_10 units="cups">1/4 cup olive oil</ing_10>
+    <ing_11 units="Tbsp">1 Tbsp freshly squeezed lemon juice</ing_11>
+    <ing_12 units="tsp">2 teaspoons sugar (more may be needed to balance out the acidity of the tomatoes,
+    add to taste)</ing_12>
+    <ing_13>Salt and fresh ground pepper to taste</ing_13>
+    <ing_14>6 or more drops of Tabasco sauce to taste</ing_14>
+    <ing_15 units="tsp">1 teaspoon Worcestershire sauce (omit for vegan or vegetarian option)</ing_15>
+    <in_16 units="cups">2 cups tomato juice (or 1 15-ounce can crushed tomatoes if you don't have tomato
+        juice)
+    </in_16> 
+    <!--2017-08-30 ajn It looks like you missed the 'g' in <ing_16>. Be cautious of this, but we'll show you how to ensure consistent spelling of your tags when we get to schema writing soon.-->
+</Ingredients>
+<Directions>
+    <step_1>Place all ingredients in a large bowl.</step_1> 
+    <step_2>Use an immersion blender or blend in batches, to desired smoothness. We prefer our gazpacho
+        somewhat chunky, so only pulse a few times in the blender.
+    </step_2>
+    <step_3>Adjust seasonings to taste.</step_3>
+    <step_4>Place in a non-reactive container (tomatoes are acidic) to store.</step_4>
+    <step_5>Chill several hours or overnight to allow the flavors to blend.</step_5>
+ </Directions>
+</Recipe_Name>
+<!--I'm hoping this is good. I'm excited to learn something new. :) -->
+
+<!-- 2017-08-30 ajn ebb
+    Great use of an XML comment, and also terrific work on your first time coding! We are impressed! Considering we went over this in class on Wed 8/30 we are hoping you have a better understanding of how to work with your attributes. Although your start tag is correct, it doesn't necessarily make sense, since it holds the rest of the text. Try using a tag that is general like '<root></root>' or even '<recipe></recipe>'
+    We also recommend not putting numbers in your element names. Why not? Well, each ingredient element is the same *kind* of thing, and a computer can always number more efficiently than a human can! (We miscount all the time...) We'll be learning how to get the computer to do the numbering (usually in attributes) a little later in the course when we're writing XSLT code. 
+    This is a great start, especially because it gave us a chance to preview a few neat things we'll be able to do with code over the next few weeks! 
+    Score: 8.8/10
+    -->
