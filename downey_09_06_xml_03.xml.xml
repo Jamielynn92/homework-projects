@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <place location="Gettysburg,PA">The Battle of Gettysburg</place>
+    
+    <speech year="1863" date="November,19">The Gettysburg Address</speech>
+    <intro setting="cemetary" location="Gettysburg">The Gettysburg National Cemetery was dedicated by President Abraham Lincoln a brief four months after the Battle. Lincoln's speech lasted only two minutes, but it went into history as the immortal Gettysburg Address.</intro>
+    <quote>
+        <opening_para line="1">"<year score="20" times4="80" plus7="87">Four score and seven years ago</year>, our fathers brought forth on this continent a new nation: conceived in liberty, and dedicated to the proposition that <quotation document="declaration_of_independence"> all men are created equal.</quotation></opening_para> 
+    
+    <para line="2">Now we are engaged in a great <year n="1861-1865">civil war</year>. . .testing whether that nation, or any nation so conceived and so dedicated. . . can long endure. We are met on a <gettysburg>great battlefield of that war.</gettysburg></para> 
+    
+    <para line="3">We have come to dedicate a portion of that field as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. </para>
+    
+    <para line="4">But, in a larger sense, we cannot <devote>dedicate</devote>. . .we cannot <declare>consecrate</declare>. . . we cannot hallow this ground. The brave men, living and dead, who struggled here have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember, what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. </para>
+    
+   <closer_para line="5"> It is rather for us to be here dedicated to the great task remaining before us. . .that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion. . . that we here highly resolve that these dead shall not have died in vain. . . that this nation, under God, shall have a new birth of freedom. . . and that government of the people. . .by the people. . .for the people. . . shall not perish from the earth. "
+   </closer_para>
+    </quote>
+</root>
+<!--Abraham Lincoln is one of my favorite presidents. So I'm hoping I did the Gettysburg Address well! --> 
